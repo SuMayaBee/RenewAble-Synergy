@@ -1,4 +1,4 @@
-# Technical Documentation
+<h1 align="center" style="color: #FF6F61; font-size: 3em;">Technical Documentation</h1>
 
 <p align="center">
   <img src="https://images.ncsl.org/image/upload/c_fill,g_auto,w_1100/f_auto,q_auto/v1676057138/website/NU-solar-wind-turbine-clean-energy-498769592_1x.jpg" alt="Renewable Energy" width="800px" style="border-radius: 15px;">
@@ -8,7 +8,7 @@
 This repository is dedicated to the development of AI-driven models for <strong>RenewAble Synergy</strong>, focusing on integrating AI in the renewable energy sector. The project aims to enhance the efficiency and management of renewable resources using machine learning techniques.
 </p>
 
-## 📊 $\textcolor{darkblue}{\textbf{Renewable\ Energy\ Generation\ Forecast}}$
+<h2 align="center" style="color: #6A5ACD; font-size: 2.5em;">📊 Renewable Energy Generation Forecast</h2>
 
 ---
 
@@ -23,10 +23,10 @@ $\textcolor{white}{\text{We focus on forecasting solar energy generation using h
 
 ### 2. Data Loading and Preprocessing
 We load time-series data from CSV files and perform:
-- **$\textcolor{lightteal}{\textbf{Missing\ Value\ Handling:}}$** Interpolation and forward-fill.
-- **$\textcolor{lightteal}{\textbf{Feature\ Engineering:}}$** Adding time-based features like hour and day.
-- **$\textcolor{lightteal}{\textbf{Scaling:}}$** Using MinMaxScaler or StandardScaler.
-- **$\textcolor{lightteal}{\textbf{Data\ Splitting:}}$** Training, validation, and test sets.
+- **$\textcolor{#90E4C1}{\textbf{Missing\ Value\ Handling:}}$** Interpolation and forward-fill.
+- **$\textcolor{#90E4C1}{\textbf{Feature\ Engineering:}}$** Adding time-based features like hour and day.
+- **$\textcolor{#90E4C1}{\textbf{Scaling:}}$** Using MinMaxScaler or StandardScaler.
+- **$\textcolor{#90E4C1}{\textbf{Data\ Splitting:}}$** Training, validation, and test sets.
 
 ### 3. Exploratory Data Analysis (EDA)
 We analyze trends, distributions, and relationships using:
@@ -69,9 +69,9 @@ $\textcolor{white}{\text{We focus on predicting wind energy generation using his
 
 ### 2. Data Loading and Preprocessing
 We load time-series data from CSV files containing information on wind turbine power generation. The preprocessing steps include:
-- **$\textcolor{lightteal}{\textbf{Handling\ Missing\ Data:}}$** Dealing with missing values and outliers.
-- **$\textcolor{lightteal}{\textbf{Feature\ Engineering:}}$** Generating time-lagged features to improve model performance.
-- **$\textcolor{lightteal}{\textbf{Data\ Visualization:}}$** Using scatter plots and histograms to explore data distribution.
+- **$\textcolor{#90E4C1}{\textbf{Handling\ Missing\ Data:}}$** Dealing with missing values and outliers.
+- **$\textcolor{#90E4C1}{\textbf{Feature\ Engineering:}}$** Generating time-lagged features to improve model performance.
+- **$\textcolor{#90E4C1}{\textbf{Data\ Visualization:}}$** Using scatter plots and histograms to explore data distribution.
 
 ### 3. Exploratory Data Analysis (EDA)
 We visualize trends and correlations within the dataset:
@@ -94,6 +94,7 @@ We train the ARIMA model on historical data and validate its performance using t
 
 ### 7. Forecasting and Results Visualization
 The final model is used to predict wind energy generation for the next 15 days. We visualize the forecast against actual values, displaying prediction intervals and residual errors.
+
 
 # Maintenance Fault Detection
 
