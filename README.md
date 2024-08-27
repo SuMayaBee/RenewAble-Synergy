@@ -23,7 +23,7 @@ This repository is dedicated to the development of AI-driven models for <strong>
 
 ---
 
-<h2 align="center" style="color: #6A5ACD; font-size: 2.5em;">📊 Renewable Energy Generation Forecast</h2>
+<h1 align="center" style="color: #6A5ACD; font-size: 2.5em;">📊 Renewable Energy Generation Forecast</h2>
 
 ---
 
@@ -112,7 +112,7 @@ The final model is used to predict wind energy generation for the next 15 days. 
 
 ---
 
-<h1 align="center" style="color: #FF6F61; font-size: 3em;">Maintenance Fault Detection</h1>
+<h1 align="center" style="color: #FF6F61; font-size: 3em;">🛠️ Maintenance Fault Detection</h1>
 
 ---
 
