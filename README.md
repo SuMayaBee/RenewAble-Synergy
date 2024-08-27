@@ -30,7 +30,7 @@ We load time-series data from CSV files and perform:
 
 ### 3. Exploratory Data Analysis (EDA)
 We analyze trends, distributions, and relationships using:
-- **$\textcolor{lightorange}{\textbf{Time-Series\ Plots:}}$** For visualizing temporal trends.
+- **$\textcolor{#CD5C08}{\textbf{Time-Series\ Plots:}}$** For visualizing temporal trends.
 - **$\textcolor{orange}{\textbf{Correlation\ Matrices:}}$** To explore feature relationships.
 - **$\textcolor{orange}{\textbf{Histograms\ and\ Boxplots:}}$** For understanding data distribution.
 
