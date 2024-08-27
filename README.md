@@ -99,6 +99,7 @@ The final model is used to predict wind energy generation for the next 15 days. 
 
 <h1 align="center" style="color: #FF6F61; font-size: 3em;">Maintenance Fault Detection</h1>
 
+---
 
 <h2 align="center" style="color: #6A5ACD; font-size: 2.5em;">⚡ Transmission Line Fault Detection</h2>
 
@@ -201,7 +202,11 @@ We train and evaluate models using:
 ### 5. Results and Model Tuning
 The Random Forest model showed the best performance with a 93.5% accuracy. However, addressing rare failure modes (e.g., motor failures) required oversampling techniques and fine-tuning of hyperparameters.
 
-# Smart Grid Stability Prediction
+---
+
+<h1 align="center" style="color: #FF6F61; font-size: 3em;">🔌 Smart Grid Stability Prediction</h1>
+
+---
 
 ### 1. Introduction
 We focus on predicting the stability of smart grids in response to varying load conditions and renewable energy inputs. The goal is to classify grid stability as "stable" or "unstable" using machine learning techniques, allowing for proactive grid management.
@@ -212,23 +217,24 @@ We focus on predicting the stability of smart grids in response to varying load 
 
 ### 2. Data Loading and Preprocessing
 We work with data that captures smart grid metrics such as voltage, current, and power factors. Preprocessing includes:
-- **Feature Engineering:** Creating interaction terms between power metrics.
-- **Data Normalization:** Standardizing input features for better model performance.
+- **$\textcolor{#90E4C1}{\textbf{Feature\ Engineering:}}$** Creating interaction terms between power metrics.
+- **$\textcolor{#90E4C1}{\textbf{Data\ Normalization:}}$** Standardizing input features for better model performance.
 
 ### 3. Model Selection and Implementation
 We implement and compare various classification models:
-- **Logistic Regression:** Baseline model for binary classification.
-- **Random Forest & XGBoost:** Tree-based models that capture complex interactions between grid features.
-- **Neural Networks:** A deep learning approach to capture non-linear relationships.
+- **$\textcolor{#FFAAAA}{\textbf{Logistic\ Regression:}}$** Baseline model for binary classification.
+- **$\textcolor{#FFAAAA}{\textbf{Random\ Forest\ and\ XGBoost:}}$** Tree-based models that capture complex interactions between grid features.
+- **$\textcolor{#FFAAAA}{\textbf{Neural\ Networks:}}$** A deep learning approach to capture non-linear relationships.
 
 ### 4. Model Training and Evaluation
 We evaluate models using:
-- **Accuracy, Precision, Recall, and F1-Score:** Standard metrics to assess classification performance.
-- **Confusion Matrix:** To visualize false positives and false negatives.
+- **$\textcolor{#B1AFFF}{\textbf{Accuracy,\ Precision,\ Recall,\ and\ F1-Score:}}$** Standard metrics to assess classification performance.
+- **$\textcolor{#B1AFFF}{\textbf{Confusion\ Matrix:}}$** To visualize false positives and false negatives.
 
 ### 5. Hyperparameter Tuning
 We fine-tune models using RandomizedSearchCV for selecting the best parameters for XGBoost, optimizing factors like `max_depth`, `gamma`, and `reg_alpha`.
 
 ### 6. Results and Conclusion
 XGBoost and Neural Networks deliver the best performance, achieving high accuracy in predicting grid stability. Future improvements involve integrating more real-time data and exploring ensemble techniques.
+
 
