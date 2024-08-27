@@ -8,7 +8,7 @@ This repository is dedicated to the development of AI-driven models for RenewAbl
 
 # Renewable Energy Generation Forcast
 
-## Solar Energy Generation Forecast
+<h2 align="center">Solar Energy Generation Forecast</h2>
 
 ### 1. Introduction
 We focus on forecasting solar energy generation using historical data. We preprocess the data and apply machine learning models to predict energy output.
@@ -49,7 +49,7 @@ We apply cross-validation and plot learning/validation curves to monitor perform
 ### 7. Forecasting and Results Visualization
 We predict solar energy generation using the best model and compare predictions against actual data using time-series plots and residual plots.
 
-## Wind Energy Generation Forecast
+<h2 align="center">Wind Energy Generation Forecast</h2>
 
 ### 1. Introduction
 We focus on predicting wind energy generation using historical data. Our approach involves preprocessing the data and applying time-series forecasting models like ARIMA to predict wind energy output for the next 15 days.
