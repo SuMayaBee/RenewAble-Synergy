@@ -1,4 +1,4 @@
-# RenewAble-Synergy
+# Technical Documentation
 
 ![anim](https://images.ncsl.org/image/upload/c_fill,g_auto,w_1100/f_auto,q_auto/v1676057138/website/NU-solar-wind-turbine-clean-energy-498769592_1x.jpg)
 
@@ -6,7 +6,7 @@
 This repository is dedicated to the development of AI-driven models for RenewAble Synergy, focusing on integrating AI in the renewable energy sector. The project aims to enhance the efficiency and management of renewable resources using machine learning techniques.
 </p>
 
-# Technical Documentation
+# Renewable Energy Generation Forcast
 
 ## Solar Energy Generation Forecast
 
