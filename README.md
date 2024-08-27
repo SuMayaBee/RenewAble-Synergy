@@ -1,4 +1,4 @@
-<h1 align="center" style="color: #FF6F61; font-size: 3em;">Technical Documentation</h1>
+<h1 align="center">🚀 **𝕋𝕖𝕔𝕙𝕟𝕚𝕔𝕒𝕝 𝔻𝕠𝕔𝕦𝕞𝕖𝕟𝕥𝕒𝕥𝕚𝕠𝕟** 🚀</h1>
 
 <p align="center">
   <img src="https://images.ncsl.org/image/upload/c_fill,g_auto,w_1100/f_auto,q_auto/v1676057138/website/NU-solar-wind-turbine-clean-energy-498769592_1x.jpg" alt="Renewable Energy" width="800px" style="border-radius: 15px;">
