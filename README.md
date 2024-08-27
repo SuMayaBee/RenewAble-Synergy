@@ -186,3 +186,34 @@ We train and evaluate models using:
 ### 5. Results and Model Tuning
 The Random Forest model showed the best performance with a 93.5% accuracy. However, addressing rare failure modes (e.g., motor failures) required oversampling techniques and fine-tuning of hyperparameters.
 
+# Smart Grid Stability Prediction
+
+### 1. Introduction
+We focus on predicting the stability of smart grids in response to varying load conditions and renewable energy inputs. The goal is to classify grid stability as "stable" or "unstable" using machine learning techniques, allowing for proactive grid management.
+
+- **The Notebook and Dataset:**
+  - [Smart Grid Stability Prediction](https://github.com/SuMayaBee/RenewAble-Synergy/blob/main/Smart%20Grid%20Stability%20Prediction/Smart%20grid%20stability%20prediction.ipynb)
+  - [Dataset](https://github.com/SuMayaBee/RenewAble-Synergy/tree/main/Smart%20Grid%20Stability%20Prediction/Dataset)
+
+### 2. Data Loading and Preprocessing
+We work with data that captures smart grid metrics such as voltage, current, and power factors. Preprocessing includes:
+- **Feature Engineering:** Creating interaction terms between power metrics.
+- **Data Normalization:** Standardizing input features for better model performance.
+
+### 3. Model Selection and Implementation
+We implement and compare various classification models:
+- **Logistic Regression:** Baseline model for binary classification.
+- **Random Forest & XGBoost:** Tree-based models that capture complex interactions between grid features.
+- **Neural Networks:** A deep learning approach to capture non-linear relationships.
+
+### 4. Model Training and Evaluation
+We evaluate models using:
+- **Accuracy, Precision, Recall, and F1-Score:** Standard metrics to assess classification performance.
+- **Confusion Matrix:** To visualize false positives and false negatives.
+
+### 5. Hyperparameter Tuning
+We fine-tune models using RandomizedSearchCV for selecting the best parameters for XGBoost, optimizing factors like `max_depth`, `gamma`, and `reg_alpha`.
+
+### 6. Results and Conclusion
+XGBoost and Neural Networks deliver the best performance, achieving high accuracy in predicting grid stability. Future improvements involve integrating more real-time data and exploring ensemble techniques.
+
