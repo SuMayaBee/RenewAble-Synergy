@@ -123,3 +123,37 @@ We train and validate the models using an 80/20 train-test split. We assess perf
 
 ### 7. Results Visualization and Conclusion
 The final model is used to classify transmission line faults, and we visualize results with confusion matrices and fault classification accuracy across different line faults.
+
+
+<h2 align="center">Solar Panel Fault Detection</h2>
+
+### 1. Introduction
+We focus on detecting faults in solar panels using image data and deep learning techniques. The objective is to classify faults that can reduce solar power generation, such as dirt accumulation, shading, and physical damage.
+
+- **The Notebook and Dataset:**
+  - [Solar Panel Fault Detection](https://github.com/SuMayaBee/RenewAble-Synergy/blob/main/Maintenance%20Fault%20Detection/Solar%20Panel%20Fault%20Detection/Solar%20Panel%20Fault%20Detection.ipynb)
+  - [Dataset](https://github.com/SuMayaBee/RenewAble-Synergy/tree/main/Maintenance%20Fault%20Detection/Solar%20Panel%20Fault%20Detection/Dataset/Faulty_solar_panel)
+
+### 2. Data Loading and Preprocessing
+We use image data of solar panels, preprocessing it with:
+- **Image Augmentation:** Techniques such as rotation, flipping, and scaling to increase model robustness.
+- **Data Normalization:** Scaling pixel values for consistent input to the neural network.
+
+### 3. Model Selection and Implementation
+We implement a Convolutional Neural Network (CNN) for image classification:
+- **Model Architecture:** Consists of multiple convolutional layers, ReLU activations, and pooling layers.
+- **Output Layer:** Softmax activation for multi-class classification of fault types.
+
+### 4. Model Training and Evaluation
+We train the model using:
+- **Loss Function:** Categorical cross-entropy for multi-class classification.
+- **Optimizer:** Adam optimizer with learning rate scheduling.
+- **Early Stopping:** To prevent overfitting based on validation loss.
+
+### 5. Evaluation Metrics
+We assess model performance using:
+- **Accuracy:** To evaluate classification success.
+- **Confusion Matrix:** Visualizing true positives, false positives, and misclassifications.
+
+### 6. Results and Visualization
+We visualize the model’s predictions on validation images, highlighting correctly and incorrectly classified samples with confidence scores.
