@@ -95,10 +95,10 @@ We train the ARIMA model on historical data and validate its performance using t
 ### 7. Forecasting and Results Visualization
 The final model is used to predict wind energy generation for the next 15 days. We visualize the forecast against actual values, displaying prediction intervals and residual errors.
 
+---
 
 <h1 align="center" style="color: #FF6F61; font-size: 3em;">Maintenance Fault Detection</h1>
 
----
 
 <h2 align="center" style="color: #6A5ACD; font-size: 2.5em;">Transmission Line Fault Detection</h2>
 
