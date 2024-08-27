@@ -96,9 +96,11 @@ We train the ARIMA model on historical data and validate its performance using t
 The final model is used to predict wind energy generation for the next 15 days. We visualize the forecast against actual values, displaying prediction intervals and residual errors.
 
 
-# Maintenance Fault Detection
+<h1 align="center" style="color: #FF6F61; font-size: 3em;">Maintenance Fault Detection</h1>
 
-<h2 align="center">Transmission Line Fault Detection</h2>
+---
+
+<h2 align="center" style="color: #6A5ACD; font-size: 2.5em;">Transmission Line Fault Detection</h2>
 
 ### 1. Introduction
 We focus on detecting faults in transmission lines using a multi-class classification approach. The objective is to identify fault types across lines A, B, C, and Ground (G) based on voltage and current measurements.
@@ -109,24 +111,24 @@ We focus on detecting faults in transmission lines using a multi-class classific
 
 ### 2. Data Loading and Preprocessing
 We load time-series data containing voltage and current measurements for fault detection. Preprocessing steps include:
-- **Feature Engineering:** Creating fault labels for each line (A, B, C, and Ground).
-- **Data Balancing:** Ensuring an even distribution of fault classes across the dataset.
+- **$\textcolor{#90E4C1}{\textbf{Feature\ Engineering:}}$** Creating fault labels for each line (A, B, C, and Ground).
+- **$\textcolor{#90E4C1}{\textbf{Data\ Balancing:}}$** Ensuring an even distribution of fault classes across the dataset.
 
 ### 3. Exploratory Data Analysis (EDA)
 We analyze fault patterns using:
-- **Voltage and Current Fluctuations:** Identifying trends where faults occur.
-- **Correlation Analysis:** Investigating relationships between fault types across different lines.
+- **$\textcolor{#FFCF81}{\textbf{Voltage\ and\ Current\ Fluctuations:}}$** Identifying trends where faults occur.
+- **$\textcolor{#FFCF81}{\textbf{Correlation\ Analysis:}}$** Investigating relationships between fault types across different lines.
 
 ### 4. Model Selection and Implementation
 We explore multiple classification models:
-- **Random Forest:** As the base classifier for multi-class detection.
-- **MultiOutput Classifiers:** Extending Random Forest, XGBoost, and other models to handle multiple fault types simultaneously.
-- **Hyperparameter Tuning:** Using Optuna for optimizing model performance.
+- **$\textcolor{#FFAAAA}{\textbf{Random\ Forest:}}$** As the base classifier for multi-class detection.
+- **$\textcolor{#FFAAAA}{\textbf{MultiOutput\ Classifiers:}}$** Extending Random Forest, XGBoost, and other models to handle multiple fault types simultaneously.
+- **$\textcolor{#FFAAAA}{\textbf{Hyperparameter\ Tuning:}}$** Using Optuna for optimizing model performance.
 
 ### 5. Evaluation Metrics
 We use key metrics for multi-class classification:
-- **Accuracy Score:** Evaluating overall classification performance.
-- **Classification Report:** Detailing precision, recall, and F1-score for each fault type (Ground, Line A, Line B, Line C).
+- **$\textcolor{#B1AFFF}{\textbf{Accuracy\ Score:}}$** Evaluating overall classification performance.
+- **$\textcolor{#B1AFFF}{\textbf{Classification\ Report:}}$** Detailing precision, recall, and F1-score for each fault type (Ground, Line A, Line B, Line C).
 
 ### 6. Model Training and Validation
 We train and validate the models using an 80/20 train-test split. We assess performance through classification reports and confusion matrices for each fault category.
@@ -134,8 +136,9 @@ We train and validate the models using an 80/20 train-test split. We assess perf
 ### 7. Results Visualization and Conclusion
 The final model is used to classify transmission line faults, and we visualize results with confusion matrices and fault classification accuracy across different line faults.
 
+---
 
-<h2 align="center">Solar Panel Fault Detection</h2>
+<h2 align="center" style="color: #6A5ACD; font-size: 2.5em;">Solar Panel Fault Detection</h2>
 
 ### 1. Introduction
 We focus on detecting faults in solar panels using image data and deep learning techniques. The objective is to classify faults that can reduce solar power generation, such as dirt accumulation, shading, and physical damage.
@@ -146,29 +149,31 @@ We focus on detecting faults in solar panels using image data and deep learning 
 
 ### 2. Data Loading and Preprocessing
 We use image data of solar panels, preprocessing it with:
-- **Image Augmentation:** Techniques such as rotation, flipping, and scaling to increase model robustness.
-- **Data Normalization:** Scaling pixel values for consistent input to the neural network.
+- **$\textcolor{#90E4C1}{\textbf{Image\ Augmentation:}}$** Techniques such as rotation, flipping, and scaling to increase model robustness.
+- **$\textcolor{#90E4C1}{\textbf{Data\ Normalization:}}$** Scaling pixel values for consistent input to the neural network.
 
 ### 3. Model Selection and Implementation
 We implement a Convolutional Neural Network (CNN) for image classification:
-- **Model Architecture:** Consists of multiple convolutional layers, ReLU activations, and pooling layers.
-- **Output Layer:** Softmax activation for multi-class classification of fault types.
+- **$\textcolor{#FFAAAA}{\textbf{Model\ Architecture:}}$** Consists of multiple convolutional layers, ReLU activations, and pooling layers.
+- **$\textcolor{#FFAAAA}{\textbf{Output\ Layer:}}$** Softmax activation for multi-class classification of fault types.
 
 ### 4. Model Training and Evaluation
 We train the model using:
-- **Loss Function:** Categorical cross-entropy for multi-class classification.
-- **Optimizer:** Adam optimizer with learning rate scheduling.
-- **Early Stopping:** To prevent overfitting based on validation loss.
+- **$\textcolor{#FFAAAA}{\textbf{Loss\ Function:}}$** Categorical cross-entropy for multi-class classification.
+- **$\textcolor{#FFAAAA}{\textbf{Optimizer:}}$** Adam optimizer with learning rate scheduling.
+- **$\textcolor{#FFAAAA}{\textbf{Early\ Stopping:}}$** To prevent overfitting based on validation loss.
 
 ### 5. Evaluation Metrics
 We assess model performance using:
-- **Accuracy:** To evaluate classification success.
-- **Confusion Matrix:** Visualizing true positives, false positives, and misclassifications.
+- **$\textcolor{#B1AFFF}{\textbf{Accuracy:}}$** To evaluate classification success.
+- **$\textcolor{#B1AFFF}{\textbf{Confusion\ Matrix:}}$** Visualizing true positives, false positives, and misclassifications.
 
 ### 6. Results and Visualization
 We visualize the model’s predictions on validation images, highlighting correctly and incorrectly classified samples with confidence scores.
 
-<h2 align="center">Wind Turbine Failure Detection</h2>
+---
+
+<h2 align="center" style="color: #6A5ACD; font-size: 2.5em;">Wind Turbine Failure Detection</h2>
 
 ### 1. Introduction
 We focus on detecting faults in wind turbines using sensor data and various machine learning models. The aim is to classify different failure modes such as bearing faults, blade faults, and motor failures to enhance predictive maintenance.
@@ -179,19 +184,19 @@ We focus on detecting faults in wind turbines using sensor data and various mach
 
 ### 2. Data Loading and Preprocessing
 We load sensor data containing operational metrics (e.g., temperature, vibration) and preprocess it by:
-- **Handling Imbalanced Data:** Using techniques like SMOTE to address class imbalance.
-- **Feature Scaling:** Normalizing features to improve model convergence.
+- **$\textcolor{#90E4C1}{\textbf{Handling\ Imbalanced\ Data:}}$** Using techniques like SMOTE to address class imbalance.
+- **$\textcolor{#90E4C1}{\textbf{Feature\ Scaling:}}$** Normalizing features to improve model convergence.
 
 ### 3. Model Selection and Implementation
 We explore multiple classification models:
-- **Logistic Regression & SVM:** Initial baselines for comparison.
-- **Decision Tree & Random Forest:** Tree-based models to handle non-linearity in the data.
-- **XGBoost:** Gradient boosting for enhanced classification performance.
+- **$\textcolor{#FFAAAA}{\textbf{Logistic\ Regression\ and\ SVM:}}$** Initial baselines for comparison.
+- **$\textcolor{#FFAAAA}{\textbf{Decision\ Tree\ and\ Random\ Forest:}}$** Tree-based models to handle non-linearity in the data.
+- **$\textcolor{#FFAAAA}{\textbf{XGBoost:}}$** Gradient boosting for enhanced classification performance.
 
 ### 4. Model Training and Evaluation
 We train and evaluate models using:
-- **Cross-Validation:** Ensuring model generalization across multiple folds.
-- **Performance Metrics:** Precision, recall, and F1-score, focusing on critical failure classes.
+- **$\textcolor{#FFAAAA}{\textbf{Cross-Validation:}}$** Ensuring model generalization across multiple folds.
+- **$\textcolor{#FFAAAA}{\textbf{Performance\ Metrics:}}$** Precision, recall, and F1-score, focusing on critical failure classes.
 
 ### 5. Results and Model Tuning
 The Random Forest model showed the best performance with a 93.5% accuracy. However, addressing rare failure modes (e.g., motor failures) required oversampling techniques and fine-tuning of hyperparameters.
