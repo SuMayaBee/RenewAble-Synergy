@@ -6,7 +6,7 @@
 This repository is dedicated to the development of AI-driven models for RenewAble Synergy, focusing on integrating AI in the renewable energy sector. The project aims to enhance the efficiency and management of renewable resources using machine learning techniques.
 </p>
 
-# Renewable Energy Generation Forcast
+# Renewable Energy Generation Forecast
 
 <h2 align="center">Solar Energy Generation Forecast</h2>
 
@@ -85,3 +85,41 @@ We train the ARIMA model on historical data and validate its performance using t
 
 ### 7. Forecasting and Results Visualization
 The final model is used to predict wind energy generation for the next 15 days. We visualize the forecast against actual values, displaying prediction intervals and residual errors.
+
+# Maintenance Fault Detection
+
+<h2 align="center">Transmission Line Fault Detection</h2>
+
+### 1. Introduction
+We focus on detecting faults in transmission lines using a multi-class classification approach. The objective is to identify fault types across lines A, B, C, and Ground (G) based on voltage and current measurements.
+
+- **The Notebook and Dataset:**
+  - [Transmission Line Fault Detection](https://github.com/SuMayaBee/RenewAble-Synergy/blob/main/Maintenance%20Fault%20Detection/Transmission%20Line%20Fault%20Detection/Transmission%20line%20fault%20detection.ipynb)
+  - [Dataset](https://github.com/SuMayaBee/RenewAble-Synergy/tree/main/Maintenance%20Fault%20Detection/Transmission%20Line%20Fault%20Detection/Dataset)
+
+### 2. Data Loading and Preprocessing
+We load time-series data containing voltage and current measurements for fault detection. Preprocessing steps include:
+- **Feature Engineering:** Creating fault labels for each line (A, B, C, and Ground).
+- **Data Balancing:** Ensuring an even distribution of fault classes across the dataset.
+
+### 3. Exploratory Data Analysis (EDA)
+We analyze fault patterns using:
+- **Voltage and Current Fluctuations:** Identifying trends where faults occur.
+- **Correlation Analysis:** Investigating relationships between fault types across different lines.
+
+### 4. Model Selection and Implementation
+We explore multiple classification models:
+- **Random Forest:** As the base classifier for multi-class detection.
+- **MultiOutput Classifiers:** Extending Random Forest, XGBoost, and other models to handle multiple fault types simultaneously.
+- **Hyperparameter Tuning:** Using Optuna for optimizing model performance.
+
+### 5. Evaluation Metrics
+We use key metrics for multi-class classification:
+- **Accuracy Score:** Evaluating overall classification performance.
+- **Classification Report:** Detailing precision, recall, and F1-score for each fault type (Ground, Line A, Line B, Line C).
+
+### 6. Model Training and Validation
+We train and validate the models using an 80/20 train-test split. We assess performance through classification reports and confusion matrices for each fault category.
+
+### 7. Results Visualization and Conclusion
+The final model is used to classify transmission line faults, and we visualize results with confusion matrices and fault classification accuracy across different line faults.
