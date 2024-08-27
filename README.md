@@ -46,8 +46,8 @@ We tune hyperparameters using GridSearchCV or RandomizedSearchCV.
 
 ### 5. Evaluation Metrics
 We use:
-- **$\textcolor{mediumpurple}{\textbf{Mean\ Absolute\ Error\ (MAE):}}$** To measure average prediction errors.
-- **$\textcolor{mediumpurple}{\textbf{Root\ Mean\ Squared\ Error\ (RMSE):}}$** To penalize larger errors.
+- **$\textcolor{lightpurple}{\textbf{Mean\ Absolute\ Error\ (MAE):}}$** To measure average prediction errors.
+- **$\textcolor{#B1AFFF}{\textbf{Root\ Mean\ Squared\ Error\ (RMSE):}}$** To penalize larger errors.
 - **$\textcolor{mediumpurple}{\textbf{R²\ (R-Squared):}}$** To explain variance captured by the model.
 
 ### 6. Model Training and Validation
