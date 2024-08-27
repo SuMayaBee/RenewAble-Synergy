@@ -37,10 +37,10 @@ We analyze trends, distributions, and relationships using:
 ### 4. Model Selection and Implementation
 We experiment with:
 
-- **$\textcolor{teal}{\textbf{Linear\ Regression}}$**: As a baseline model.
-- **$\textcolor{teal}{\textbf{Decision\ Tree\ and\ Random\ Forest\ Regressors}}$**: For capturing non-linear relationships.
-- **$\textcolor{teal}{\textbf{Gradient\ Boosting\ Models\ (XGBoost,\ LightGBM)}}$**: For advanced, iterative improvements.
-- **$\textcolor{teal}{\textbf{Neural\ Networks\ (if\ applicable)}}$**: For modeling complex patterns.
+- **$\textcolor{lightteal}{\textbf{Linear\ Regression}}$**: As a baseline model.
+- **$\textcolor{lightteal}{\textbf{Decision\ Tree\ and\ Random\ Forest\ Regressors}}$**: For capturing non-linear relationships.
+- **$\textcolor{lightteal}{\textbf{Gradient\ Boosting\ Models\ (XGBoost,\ LightGBM)}}$**: For advanced, iterative improvements.
+- **$\textcolor{lightteal}{\textbf{Neural\ Networks\ (if\ applicable)}}$**: For modeling complex patterns.
 
 We tune hyperparameters using GridSearchCV or RandomizedSearchCV.
 
@@ -80,9 +80,9 @@ We visualize trends and correlations within the dataset:
 
 ### 4. Model Selection and Implementation
 We implement and evaluate ARIMA for time-series forecasting:
-- **$\textcolor{teal}{\textbf{ARIMA\ (AutoRegressive\ Integrated\ Moving\ Average):}}$** Configured with optimal parameters `(p=2, d=0, q=3)` after tuning.
-- **$\textcolor{teal}{\textbf{Model\ Diagnostics:}}$** Analyzing residuals for normality and autocorrelation.
-- **$\textcolor{teal}{\textbf{Train-Test\ Split:}}$** Splitting the data to validate model performance over a 15-day forecast.
+- **$\textcolor{lightteal}{\textbf{ARIMA\ (AutoRegressive\ Integrated\ Moving\ Average):}}$** Configured with optimal parameters `(p=2, d=0, q=3)` after tuning.
+- **$\textcolor{lightteal}{\textbf{Model\ Diagnostics:}}$** Analyzing residuals for normality and autocorrelation.
+- **$\textcolor{lightteal}{\textbf{Train-Test\ Split:}}$** Splitting the data to validate model performance over a 15-day forecast.
 
 ### 5. Evaluation Metrics
 We use key metrics to evaluate forecast accuracy:
