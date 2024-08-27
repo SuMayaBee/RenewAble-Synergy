@@ -1,4 +1,4 @@
-# RenewAble-Synergy
+# RenewAble Synergy
 
 ![anim](https://images.ncsl.org/image/upload/c_fill,g_auto,w_1100/f_auto,q_auto/v1676057138/website/NU-solar-wind-turbine-clean-energy-498769592_1x.jpg)
 
