@@ -100,7 +100,7 @@ The final model is used to predict wind energy generation for the next 15 days. 
 <h1 align="center" style="color: #FF6F61; font-size: 3em;">Maintenance Fault Detection</h1>
 
 
-<h2 align="center" style="color: #6A5ACD; font-size: 2.5em;">Transmission Line Fault Detection</h2>
+<h2 align="center" style="color: #6A5ACD; font-size: 2.5em;">⚡ Transmission Line Fault Detection</h2>
 
 ### 1. Introduction
 We focus on detecting faults in transmission lines using a multi-class classification approach. The objective is to identify fault types across lines A, B, C, and Ground (G) based on voltage and current measurements.
@@ -138,7 +138,7 @@ The final model is used to classify transmission line faults, and we visualize r
 
 ---
 
-<h2 align="center" style="color: #6A5ACD; font-size: 2.5em;">Solar Panel Fault Detection</h2>
+<h2 align="center" style="color: #6A5ACD; font-size: 2.5em;">🔍 Solar Panel Fault Detection</h2>
 
 ### 1. Introduction
 We focus on detecting faults in solar panels using image data and deep learning techniques. The objective is to classify faults that can reduce solar power generation, such as dirt accumulation, shading, and physical damage.
@@ -173,7 +173,7 @@ We visualize the model’s predictions on validation images, highlighting correc
 
 ---
 
-<h2 align="center" style="color: #6A5ACD; font-size: 2.5em;">Wind Turbine Failure Detection</h2>
+<h2 align="center" style="color: #6A5ACD; font-size: 2.5em;">🌪️ Wind Turbine Failure Detection</h2>
 
 ### 1. Introduction
 We focus on detecting faults in wind turbines using sensor data and various machine learning models. The aim is to classify different failure modes such as bearing faults, blade faults, and motor failures to enhance predictive maintenance.
