@@ -36,6 +36,7 @@ We analyze trends, distributions, and relationships using:
 
 ### 4. Model Selection and Implementation
 We experiment with:
+
 - **$\textcolor{teal}{\textbf{Linear\ Regression}}$**: As a baseline model.
 - **$\textcolor{teal}{\textbf{Decision\ Tree\ \&\ Random\ Forest\ Regressors}}$**: For capturing non-linear relationships.
 - **$\textcolor{teal}{\textbf{Gradient\ Boosting\ Models\ (XGBoost,\ LightGBM)}}$**: For advanced, iterative improvements.
@@ -45,9 +46,9 @@ We tune hyperparameters using GridSearchCV or RandomizedSearchCV.
 
 ### 5. Evaluation Metrics
 We use:
-- **$\textcolor{blue}{\textbf{Mean\ Absolute\ Error\ (MAE):}}$** To measure average prediction errors.
-- **$\textcolor{blue}{\textbf{Root\ Mean\ Squared\ Error\ (RMSE):}}$** To penalize larger errors.
-- **$\textcolor{blue}{\textbf{R²\ (R-Squared):}}$** To explain variance captured by the model.
+- **$\textcolor{mediumpurple}{\textbf{Mean\ Absolute\ Error\ (MAE):}}$** To measure average prediction errors.
+- **$\textcolor{mediumpurple}{\textbf{Root\ Mean\ Squared\ Error\ (RMSE):}}$** To penalize larger errors.
+- **$\textcolor{mediumpurple}{\textbf{R²\ (R-Squared):}}$** To explain variance captured by the model.
 
 ### 6. Model Training and Validation
 We apply cross-validation and plot learning/validation curves to monitor performance and diagnose overfitting.
@@ -85,8 +86,8 @@ We implement and evaluate ARIMA for time-series forecasting:
 
 ### 5. Evaluation Metrics
 We use key metrics to evaluate forecast accuracy:
-- **$\textcolor{blue}{\textbf{Mean\ Absolute\ Percentage\ Error\ (MAPE):}}$** ~2.6% indicating 97.4% accuracy.
-- **$\textcolor{blue}{\textbf{Root\ Mean\ Squared\ Error\ (RMSE):}}$** For evaluating model precision.
+- **$\textcolor{mediumpurple}{\textbf{Mean\ Absolute\ Percentage\ Error\ (MAPE):}}$** ~2.6% indicating 97.4% accuracy.
+- **$\textcolor{mediumpurple}{\textbf{Root\ Mean\ Squared\ Error\ (RMSE):}}$** For evaluating model precision.
 
 ### 6. Model Training and Validation
 We train the ARIMA model on historical data and validate its performance using test data. We plot the actual vs. predicted values and confidence intervals to evaluate the accuracy visually.
