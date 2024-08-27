@@ -8,7 +8,7 @@
 This repository is dedicated to the development of AI-driven models for <strong>RenewAble Synergy</strong>, focusing on integrating AI in the renewable energy sector. The project aims to enhance the efficiency and management of renewable resources using machine learning techniques.
 </p>
 
-## 📊 $\textcolor{lightblue}{\textbf{Renewable\ Energy\ Generation\ Forecast}}$
+## 📊 $\textcolor{darkblue}{\textbf{Renewable\ Energy\ Generation\ Forecast}}$
 
 ---
 
@@ -22,29 +22,32 @@ $\textcolor{gray}{\text{We focus on forecasting solar energy generation using hi
   - [Dataset](https://github.com/SuMayaBee/RenewAble-Synergy/tree/main/Renewable%20Energy%20Generation%20Forecast/Solar%20Energy%20Generation%20Forecast/Dataset)
 
 ### 2. Data Loading and Preprocessing
-- **$\textcolor{lightgreen}{\text{Missing\ Value\ Handling:}}$** Interpolation and forward-fill.
-- **$\textcolor{lightgreen}{\text{Feature\ Engineering:}}$** Adding time-based features like hour and day.
-- **$\textcolor{lightgreen}{\text{Scaling:}}$** Using MinMaxScaler or StandardScaler.
-- **$\textcolor{lightgreen}{\text{Data\ Splitting:}}$** Training, validation, and test sets.
+We load time-series data from CSV files and perform:
+- **$\textcolor{darkgreen}{\textbf{Missing\ Value\ Handling:}}$** Interpolation and forward-fill.
+- **$\textcolor{darkgreen}{\textbf{Feature\ Engineering:}}$** Adding time-based features like hour and day.
+- **$\textcolor{darkgreen}{\textbf{Scaling:}}$** Using MinMaxScaler or StandardScaler.
+- **$\textcolor{darkgreen}{\textbf{Data\ Splitting:}}$** Training, validation, and test sets.
 
 ### 3. Exploratory Data Analysis (EDA)
 We analyze trends, distributions, and relationships using:
-- **$\textcolor{orange}{\text{Time-Series\ Plots:}}$** For visualizing temporal trends.
-- **$\textcolor{orange}{\text{Correlation\ Matrices:}}$** To explore feature relationships.
-- **$\textcolor{orange}{\text{Histograms\ and\ Boxplots:}}$** For understanding data distribution.
+- **$\textcolor{orange}{\textbf{Time-Series\ Plots:}}$** For visualizing temporal trends.
+- **$\textcolor{orange}{\textbf{Correlation\ Matrices:}}$** To explore feature relationships.
+- **$\textcolor{orange}{\textbf{Histograms\ and\ Boxplots:}}$** For understanding data distribution.
 
 ### 4. Model Selection and Implementation
 We experiment with:
-- **$\textcolor{teal}{\text{Linear\ Regression:}}$** As a baseline model.
-- **$\textcolor{teal}{\text{Decision\ Tree\ \&\ Random\ Forest\ Regressors:}}$** For capturing non-linear relationships.
-- **$\textcolor{teal}{\text{Gradient\ Boosting\ Models\ (XGBoost,\ LightGBM):}}$** For advanced, iterative improvements.
-- **$\textcolor{teal}{\text{Neural\ Networks\ (if\ applicable):}}$** For modeling complex patterns.
+- **$\textcolor{teal}{\textbf{Linear\ Regression}}$**: As a baseline model.
+- **$\textcolor{teal}{\textbf{Decision\ Tree\ \&\ Random\ Forest\ Regressors}}$**: For capturing non-linear relationships.
+- **$\textcolor{teal}{\textbf{Gradient\ Boosting\ Models\ (XGBoost,\ LightGBM)}}$**: For advanced, iterative improvements.
+- **$\textcolor{teal}{\textbf{Neural\ Networks\ (if\ applicable)}}$**: For modeling complex patterns.
+
+We tune hyperparameters using GridSearchCV or RandomizedSearchCV.
 
 ### 5. Evaluation Metrics
 We use:
-- **$\textcolor{red}{\text{Mean\ Absolute\ Error\ (MAE):}}$** To measure average prediction errors.
-- **$\textcolor{red}{\text{Root\ Mean\ Squared\ Error\ (RMSE):}}$** To penalize larger errors.
-- **$\textcolor{red}{\text{R²\ (R-Squared):}}$** To explain variance captured by the model.
+- **$\textcolor{blue}{\textbf{Mean\ Absolute\ Error\ (MAE):}}$** To measure average prediction errors.
+- **$\textcolor{blue}{\textbf{Root\ Mean\ Squared\ Error\ (RMSE):}}$** To penalize larger errors.
+- **$\textcolor{blue}{\textbf{R²\ (R-Squared):}}$** To explain variance captured by the model.
 
 ### 6. Model Training and Validation
 We apply cross-validation and plot learning/validation curves to monitor performance and diagnose overfitting.
@@ -65,25 +68,25 @@ $\textcolor{gray}{\text{We focus on predicting wind energy generation using hist
 
 ### 2. Data Loading and Preprocessing
 We load time-series data from CSV files containing information on wind turbine power generation. The preprocessing steps include:
-- **$\textcolor{lightgreen}{\text{Handling\ Missing\ Data:}}$** Dealing with missing values and outliers.
-- **$\textcolor{lightgreen}{\text{Feature\ Engineering:}}$** Generating time-lagged features to improve model performance.
-- **$\textcolor{lightgreen}{\text{Data\ Visualization:}}$** Using scatter plots and histograms to explore data distribution.
+- **$\textcolor{darkgreen}{\textbf{Handling\ Missing\ Data:}}$** Dealing with missing values and outliers.
+- **$\textcolor{darkgreen}{\textbf{Feature\ Engineering:}}$** Generating time-lagged features to improve model performance.
+- **$\textcolor{darkgreen}{\textbf{Data\ Visualization:}}$** Using scatter plots and histograms to explore data distribution.
 
 ### 3. Exploratory Data Analysis (EDA)
 We visualize trends and correlations within the dataset:
-- **$\textcolor{orange}{\text{Time-Series\ Visualization:}}$** Plotting active power generation over time.
-- **$\textcolor{orange}{\text{Correlation\ Analysis:}}$** Checking relationships between lagged values and current power output.
+- **$\textcolor{orange}{\textbf{Time-Series\ Visualization:}}$** Plotting active power generation over time.
+- **$\textcolor{orange}{\textbf{Correlation\ Analysis:}}$** Checking relationships between lagged values and current power output.
 
 ### 4. Model Selection and Implementation
 We implement and evaluate ARIMA for time-series forecasting:
-- **$\textcolor{teal}{\text{ARIMA\ (AutoRegressive\ Integrated\ Moving\ Average):}}$** Configured with optimal parameters `(p=2, d=0, q=3)` after tuning.
-- **$\textcolor{teal}{\text{Model\ Diagnostics:}}$** Analyzing residuals for normality and autocorrelation.
-- **$\textcolor{teal}{\text{Train-Test\ Split:}}$** Splitting the data to validate model performance over a 15-day forecast.
+- **$\textcolor{teal}{\textbf{ARIMA\ (AutoRegressive\ Integrated\ Moving\ Average):}}$** Configured with optimal parameters `(p=2, d=0, q=3)` after tuning.
+- **$\textcolor{teal}{\textbf{Model\ Diagnostics:}}$** Analyzing residuals for normality and autocorrelation.
+- **$\textcolor{teal}{\textbf{Train-Test\ Split:}}$** Splitting the data to validate model performance over a 15-day forecast.
 
 ### 5. Evaluation Metrics
 We use key metrics to evaluate forecast accuracy:
-- **$\textcolor{red}{\text{Mean\ Absolute\ Percentage\ Error\ (MAPE):}}$** ~2.6% indicating 97.4% accuracy.
-- **$\textcolor{red}{\text{Root\ Mean\ Squared\ Error\ (RMSE):}}$** For evaluating model precision.
+- **$\textcolor{blue}{\textbf{Mean\ Absolute\ Percentage\ Error\ (MAPE):}}$** ~2.6% indicating 97.4% accuracy.
+- **$\textcolor{blue}{\textbf{Root\ Mean\ Squared\ Error\ (RMSE):}}$** For evaluating model precision.
 
 ### 6. Model Training and Validation
 We train the ARIMA model on historical data and validate its performance using test data. We plot the actual vs. predicted values and confidence intervals to evaluate the accuracy visually.
