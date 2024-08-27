@@ -1,4 +1,4 @@
-<h1 align="center">🚀 **𝕋𝕖𝕔𝕙𝕟𝕚𝕔𝕒𝕝 𝔻𝕠𝕔𝕦𝕞𝕖𝕟𝕥𝕒𝕥𝕚𝕠𝕟** 🚀</h1>
+<h1 align="center">🚀 **Technical Documentation** 🚀</h1>
 
 <p align="center">
   <img src="https://images.ncsl.org/image/upload/c_fill,g_auto,w_1100/f_auto,q_auto/v1676057138/website/NU-solar-wind-turbine-clean-energy-498769592_1x.jpg" alt="Renewable Energy" width="800px" style="border-radius: 15px;">
@@ -8,7 +8,8 @@
 This repository is dedicated to the development of AI-driven models for <strong>RenewAble Synergy</strong>, focusing on integrating AI in the renewable energy sector. The project aims to enhance the efficiency and management of renewable resources using machine learning techniques.
 </p>
 
-### Key Highlights:
+### 🎯 Key Highlights 
+
 1. **Energy Generation Forecasting:**
    - **🌞 Solar Energy Generation Forecast:** Predicting solar power output using historical data and machine learning models to optimize energy planning.
    - **💨 Wind Energy Generation Forecast:** Leveraging time-series forecasting models like ARIMA to accurately predict wind power generation.
