@@ -157,3 +157,32 @@ We assess model performance using:
 
 ### 6. Results and Visualization
 We visualize the model’s predictions on validation images, highlighting correctly and incorrectly classified samples with confidence scores.
+
+<h2 align="center">Wind Turbine Failure Detection</h2>
+
+### 1. Introduction
+We focus on detecting faults in wind turbines using sensor data and various machine learning models. The aim is to classify different failure modes such as bearing faults, blade faults, and motor failures to enhance predictive maintenance.
+
+- **The Notebook and Dataset:**
+  - [Wind Turbine Failure Detection](https://github.com/SuMayaBee/RenewAble-Synergy/blob/main/Maintenance%20Fault%20Detection/Wind%20Turbine%20Fault%20Detection/Wind%20turbine%20failure%20detection.ipynb)
+  - [Dataset](https://github.com/SuMayaBee/RenewAble-Synergy/tree/main/Maintenance%20Fault%20Detection/Wind%20Turbine%20Fault%20Detection/Dataset)
+
+### 2. Data Loading and Preprocessing
+We load sensor data containing operational metrics (e.g., temperature, vibration) and preprocess it by:
+- **Handling Imbalanced Data:** Using techniques like SMOTE to address class imbalance.
+- **Feature Scaling:** Normalizing features to improve model convergence.
+
+### 3. Model Selection and Implementation
+We explore multiple classification models:
+- **Logistic Regression & SVM:** Initial baselines for comparison.
+- **Decision Tree & Random Forest:** Tree-based models to handle non-linearity in the data.
+- **XGBoost:** Gradient boosting for enhanced classification performance.
+
+### 4. Model Training and Evaluation
+We train and evaluate models using:
+- **Cross-Validation:** Ensuring model generalization across multiple folds.
+- **Performance Metrics:** Precision, recall, and F1-score, focusing on critical failure classes.
+
+### 5. Results and Model Tuning
+The Random Forest model showed the best performance with a 93.5% accuracy. However, addressing rare failure modes (e.g., motor failures) required oversampling techniques and fine-tuning of hyperparameters.
+
