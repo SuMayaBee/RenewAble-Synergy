@@ -23,10 +23,10 @@ $\textcolor{gray}{\text{We focus on forecasting solar energy generation using hi
 
 ### 2. Data Loading and Preprocessing
 We load time-series data from CSV files and perform:
-- **$\textcolor{darkgreen}{\textbf{Missing\ Value\ Handling:}}$** Interpolation and forward-fill.
-- **$\textcolor{darkgreen}{\textbf{Feature\ Engineering:}}$** Adding time-based features like hour and day.
-- **$\textcolor{darkgreen}{\textbf{Scaling:}}$** Using MinMaxScaler or StandardScaler.
-- **$\textcolor{darkgreen}{\textbf{Data\ Splitting:}}$** Training, validation, and test sets.
+- **$\textcolor{lightgreen}{\textbf{Missing\ Value\ Handling:}}$** Interpolation and forward-fill.
+- **$\textcolor{lightgreen}{\textbf{Feature\ Engineering:}}$** Adding time-based features like hour and day.
+- **$\textcolor{lightgreen}{\textbf{Scaling:}}$** Using MinMaxScaler or StandardScaler.
+- **$\textcolor{lightgreen}{\textbf{Data\ Splitting:}}$** Training, validation, and test sets.
 
 ### 3. Exploratory Data Analysis (EDA)
 We analyze trends, distributions, and relationships using:
@@ -69,9 +69,9 @@ $\textcolor{gray}{\text{We focus on predicting wind energy generation using hist
 
 ### 2. Data Loading and Preprocessing
 We load time-series data from CSV files containing information on wind turbine power generation. The preprocessing steps include:
-- **$\textcolor{darkgreen}{\textbf{Handling\ Missing\ Data:}}$** Dealing with missing values and outliers.
-- **$\textcolor{darkgreen}{\textbf{Feature\ Engineering:}}$** Generating time-lagged features to improve model performance.
-- **$\textcolor{darkgreen}{\textbf{Data\ Visualization:}}$** Using scatter plots and histograms to explore data distribution.
+- **$\textcolor{lightgreen}{\textbf{Handling\ Missing\ Data:}}$** Dealing with missing values and outliers.
+- **$\textcolor{lightgreen}{\textbf{Feature\ Engineering:}}$** Generating time-lagged features to improve model performance.
+- **$\textcolor{lightgreen}{\textbf{Data\ Visualization:}}$** Using scatter plots and histograms to explore data distribution.
 
 ### 3. Exploratory Data Analysis (EDA)
 We visualize trends and correlations within the dataset:
