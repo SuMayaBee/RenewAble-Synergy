@@ -13,7 +13,7 @@ This repository is dedicated to the development of AI-driven models for RenewAbl
 ### 1. Introduction
 We focus on forecasting solar energy generation using historical data. We preprocess the data and apply machine learning models to predict energy output.
 
-- **The Notebooks and Dataset:**
+- **The Notebook and Dataset:**
   - [Solar Energy Generation Forecast](https://github.com/SuMayaBee/RenewAble-Synergy/blob/main/Renewable%20Energy%20Generation%20Forecast/Solar%20Energy%20Generation%20Forecast/Solar%20energy%20generation%20forecast.ipynb)
   - [Dataset](https://github.com/SuMayaBee/RenewAble-Synergy/tree/main/Renewable%20Energy%20Generation%20Forecast/Solar%20Energy%20Generation%20Forecast/Dataset)
 
@@ -48,3 +48,40 @@ We apply cross-validation and plot learning/validation curves to monitor perform
 
 ### 7. Forecasting and Results Visualization
 We predict solar energy generation using the best model and compare predictions against actual data using time-series plots and residual plots.
+
+## Wind Energy Generation Forecast
+
+### 1. Introduction
+We focus on predicting wind energy generation using historical data. Our approach involves preprocessing the data and applying time-series forecasting models like ARIMA to predict wind energy output for the next 15 days.
+
+- **The Notebook and Dataset:**
+  - [Wind Energy Generation Forecast](https://github.com/SuMayaBee/RenewAble-Synergy/blob/main/Renewable%20Energy%20Generation%20Forecast/Wind%20Energy%20Generation%20Forecast/Wind%20energy%20generation%20forecast.ipynb)
+  - [Dataset](https://github.com/SuMayaBee/RenewAble-Synergy/tree/main/Renewable%20Energy%20Generation%20Forecast/Wind%20Energy%20Generation%20Forecast/Dataset)
+
+### 2. Data Loading and Preprocessing
+We load time-series data from CSV files containing information on wind turbine power generation. The preprocessing steps include:
+- **Handling Missing Data:** Dealing with missing values and outliers.
+- **Feature Engineering:** Generating time-lagged features to improve model performance.
+- **Data Visualization:** Using scatter plots and histograms to explore data distribution.
+
+### 3. Exploratory Data Analysis (EDA)
+We visualize trends and correlations within the dataset:
+- **Time-Series Visualization:** Plotting active power generation over time.
+- **Correlation Analysis:** Checking relationships between lagged values and current power output.
+
+### 4. Model Selection and Implementation
+We implement and evaluate ARIMA for time-series forecasting:
+- **ARIMA (AutoRegressive Integrated Moving Average):** Configured with optimal parameters `(p=2, d=0, q=3)` after tuning.
+- **Model Diagnostics:** Analyzing residuals for normality and autocorrelation.
+- **Train-Test Split:** Splitting the data to validate model performance over a 15-day forecast.
+
+### 5. Evaluation Metrics
+We use key metrics to evaluate forecast accuracy:
+- **Mean Absolute Percentage Error (MAPE):** ~2.6% indicating 97.4% accuracy.
+- **Root Mean Squared Error (RMSE):** For evaluating model precision.
+
+### 6. Model Training and Validation
+We train the ARIMA model on historical data and validate its performance using test data. We plot the actual vs. predicted values and confidence intervals to evaluate the accuracy visually.
+
+### 7. Forecasting and Results Visualization
+The final model is used to predict wind energy generation for the next 15 days. We visualize the forecast against actual values, displaying prediction intervals and residual errors.
