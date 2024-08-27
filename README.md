@@ -1,55 +1,50 @@
-# <div align="center" style="font-family: 'Arial', sans-serif; font-size: 2.5em; color: #2E86C1;">Technical Documentation</div>
+# Technical Documentation
 
 <p align="center">
   <img src="https://images.ncsl.org/image/upload/c_fill,g_auto,w_1100/f_auto,q_auto/v1676057138/website/NU-solar-wind-turbine-clean-energy-498769592_1x.jpg" alt="Renewable Energy" width="800px" style="border-radius: 15px;">
 </p>
 
-<p align="justify" style="font-family: 'Verdana', sans-serif; font-size: 1.1em; color: #34495E;">
+<p align="justify">
 This repository is dedicated to the development of AI-driven models for <strong>RenewAble Synergy</strong>, focusing on integrating AI in the renewable energy sector. The project aims to enhance the efficiency and management of renewable resources using machine learning techniques.
 </p>
 
-## <div align="center" style="font-size: 2em; color: #28B463;">📊 Renewable Energy Generation Forecast</div>
+## 📊 $\textcolor{lightblue}{\textbf{Renewable\ Energy\ Generation\ Forecast}}$
 
 ---
 
-<h2 align="center" style="color: #D35400;">🌞 Solar Energy Generation Forecast</h2>
+## $\textcolor{orange}{\textbf{🌞\ Solar\ Energy\ Generation\ Forecast}}$
 
 ### 1. Introduction
-<div style="font-family: 'Georgia', serif; font-size: 1.1em; color: #5D6D7E;">
-We focus on forecasting solar energy generation using historical data. We preprocess the data and apply machine learning models to predict energy output.
-</div>
+$\textcolor{gray}{\text{We focus on forecasting solar energy generation using historical data. We preprocess the data and apply machine learning models to predict energy output.}}$
 
 - **The Notebook and Dataset:**
   - [Solar Energy Generation Forecast](https://github.com/SuMayaBee/RenewAble-Synergy/blob/main/Renewable%20Energy%20Generation%20Forecast/Solar%20Energy%20Generation%20Forecast/Solar%20energy%20generation%20forecast.ipynb)
   - [Dataset](https://github.com/SuMayaBee/RenewAble-Synergy/tree/main/Renewable%20Energy%20Generation%20Forecast/Solar%20Energy%20Generation%20Forecast/Dataset)
 
 ### 2. Data Loading and Preprocessing
-We load time-series data from CSV files and perform:
-- **<span style="color: #2874A6;">Missing Value Handling:</span>** Interpolation and forward-fill.
-- **<span style="color: #2874A6;">Feature Engineering:</span>** Adding time-based features like hour and day.
-- **<span style="color: #2874A6;">Scaling:</span>** Using MinMaxScaler or StandardScaler.
-- **<span style="color: #2874A6;">Data Splitting:</span>** Training, validation, and test sets.
+- **$\textcolor{lightgreen}{\text{Missing\ Value\ Handling:}}$** Interpolation and forward-fill.
+- **$\textcolor{lightgreen}{\text{Feature\ Engineering:}}$** Adding time-based features like hour and day.
+- **$\textcolor{lightgreen}{\text{Scaling:}}$** Using MinMaxScaler or StandardScaler.
+- **$\textcolor{lightgreen}{\text{Data\ Splitting:}}$** Training, validation, and test sets.
 
 ### 3. Exploratory Data Analysis (EDA)
 We analyze trends, distributions, and relationships using:
-- **<span style="color: #D35400;">Time-Series Plots:</span>** For visualizing temporal trends.
-- **<span style="color: #D35400;">Correlation Matrices:</span>** To explore feature relationships.
-- **<span style="color: #D35400;">Histograms and Boxplots:</span>** For understanding data distribution.
+- **$\textcolor{orange}{\text{Time-Series\ Plots:}}$** For visualizing temporal trends.
+- **$\textcolor{orange}{\text{Correlation\ Matrices:}}$** To explore feature relationships.
+- **$\textcolor{orange}{\text{Histograms\ and\ Boxplots:}}$** For understanding data distribution.
 
 ### 4. Model Selection and Implementation
 We experiment with:
-- **<span style="color: #1ABC9C;">Linear Regression:</span>** As a baseline model.
-- **<span style="color: #1ABC9C;">Decision Tree & Random Forest Regressors:</span>** For capturing non-linear relationships.
-- **<span style="color: #1ABC9C;">Gradient Boosting Models (XGBoost, LightGBM):</span>** For advanced, iterative improvements.
-- **<span style="color: #1ABC9C;">Neural Networks (if applicable):</span>** For modeling complex patterns.
-
-We tune hyperparameters using GridSearchCV or RandomizedSearchCV.
+- **$\textcolor{teal}{\text{Linear\ Regression:}}$** As a baseline model.
+- **$\textcolor{teal}{\text{Decision\ Tree\ \&\ Random\ Forest\ Regressors:}}$** For capturing non-linear relationships.
+- **$\textcolor{teal}{\text{Gradient\ Boosting\ Models\ (XGBoost,\ LightGBM):}}$** For advanced, iterative improvements.
+- **$\textcolor{teal}{\text{Neural\ Networks\ (if\ applicable):}}$** For modeling complex patterns.
 
 ### 5. Evaluation Metrics
 We use:
-- **<span style="color: #C0392B;">Mean Absolute Error (MAE):</span>** To measure average prediction errors.
-- **<span style="color: #C0392B;">Root Mean Squared Error (RMSE):</span>** To penalize larger errors.
-- **<span style="color: #C0392B;">R² (R-Squared):</span>** To explain variance captured by the model.
+- **$\textcolor{red}{\text{Mean\ Absolute\ Error\ (MAE):}}$** To measure average prediction errors.
+- **$\textcolor{red}{\text{Root\ Mean\ Squared\ Error\ (RMSE):}}$** To penalize larger errors.
+- **$\textcolor{red}{\text{R²\ (R-Squared):}}$** To explain variance captured by the model.
 
 ### 6. Model Training and Validation
 We apply cross-validation and plot learning/validation curves to monitor performance and diagnose overfitting.
@@ -59,12 +54,10 @@ We predict solar energy generation using the best model and compare predictions 
 
 ---
 
-<h2 align="center" style="color: #2E86C1;">💨 Wind Energy Generation Forecast</h2>
+## $\textcolor{deepskyblue}{\textbf{💨\ Wind\ Energy\ Generation\ Forecast}}$
 
 ### 1. Introduction
-<div style="font-family: 'Georgia', serif; font-size: 1.1em; color: #5D6D7E;">
-We focus on predicting wind energy generation using historical data. Our approach involves preprocessing the data and applying time-series forecasting models like ARIMA to predict wind energy output for the next 15 days.
-</div>
+$\textcolor{gray}{\text{We focus on predicting wind energy generation using historical data. Our approach involves preprocessing the data and applying time-series forecasting models like ARIMA to predict wind energy output for the next 15 days.}}$
 
 - **The Notebook and Dataset:**
   - [Wind Energy Generation Forecast](https://github.com/SuMayaBee/RenewAble-Synergy/blob/main/Renewable%20Energy%20Generation%20Forecast/Wind%20Energy%20Generation%20Forecast/Wind%20energy%20generation%20forecast.ipynb)
@@ -72,25 +65,25 @@ We focus on predicting wind energy generation using historical data. Our approac
 
 ### 2. Data Loading and Preprocessing
 We load time-series data from CSV files containing information on wind turbine power generation. The preprocessing steps include:
-- **<span style="color: #2874A6;">Handling Missing Data:</span>** Dealing with missing values and outliers.
-- **<span style="color: #2874A6;">Feature Engineering:</span>** Generating time-lagged features to improve model performance.
-- **<span style="color: #2874A6;">Data Visualization:</span>** Using scatter plots and histograms to explore data distribution.
+- **$\textcolor{lightgreen}{\text{Handling\ Missing\ Data:}}$** Dealing with missing values and outliers.
+- **$\textcolor{lightgreen}{\text{Feature\ Engineering:}}$** Generating time-lagged features to improve model performance.
+- **$\textcolor{lightgreen}{\text{Data\ Visualization:}}$** Using scatter plots and histograms to explore data distribution.
 
 ### 3. Exploratory Data Analysis (EDA)
 We visualize trends and correlations within the dataset:
-- **<span style="color: #D35400;">Time-Series Visualization:</span>** Plotting active power generation over time.
-- **<span style="color: #D35400;">Correlation Analysis:</span>** Checking relationships between lagged values and current power output.
+- **$\textcolor{orange}{\text{Time-Series\ Visualization:}}$** Plotting active power generation over time.
+- **$\textcolor{orange}{\text{Correlation\ Analysis:}}$** Checking relationships between lagged values and current power output.
 
 ### 4. Model Selection and Implementation
 We implement and evaluate ARIMA for time-series forecasting:
-- **<span style="color: #1ABC9C;">ARIMA (AutoRegressive Integrated Moving Average):</span>** Configured with optimal parameters `(p=2, d=0, q=3)` after tuning.
-- **<span style="color: #1ABC9C;">Model Diagnostics:</span>** Analyzing residuals for normality and autocorrelation.
-- **<span style="color: #1ABC9C;">Train-Test Split:</span>** Splitting the data to validate model performance over a 15-day forecast.
+- **$\textcolor{teal}{\text{ARIMA\ (AutoRegressive\ Integrated\ Moving\ Average):}}$** Configured with optimal parameters `(p=2, d=0, q=3)` after tuning.
+- **$\textcolor{teal}{\text{Model\ Diagnostics:}}$** Analyzing residuals for normality and autocorrelation.
+- **$\textcolor{teal}{\text{Train-Test\ Split:}}$** Splitting the data to validate model performance over a 15-day forecast.
 
 ### 5. Evaluation Metrics
 We use key metrics to evaluate forecast accuracy:
-- **<span style="color: #C0392B;">Mean Absolute Percentage Error (MAPE):</span>** ~2.6% indicating 97.4% accuracy.
-- **<span style="color: #C0392B;">Root Mean Squared Error (RMSE):</span>** For evaluating model precision.
+- **$\textcolor{red}{\text{Mean\ Absolute\ Percentage\ Error\ (MAPE):}}$** ~2.6% indicating 97.4% accuracy.
+- **$\textcolor{red}{\text{Root\ Mean\ Squared\ Error\ (RMSE):}}$** For evaluating model precision.
 
 ### 6. Model Training and Validation
 We train the ARIMA model on historical data and validate its performance using test data. We plot the actual vs. predicted values and confidence intervals to evaluate the accuracy visually.
