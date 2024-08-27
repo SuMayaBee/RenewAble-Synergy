@@ -38,7 +38,7 @@ We analyze trends, distributions, and relationships using:
 We experiment with:
 
 - **$\textcolor{#90E4C1}{\textbf{Linear\ Regression}}$**: As a baseline model.
-- **$\textcolor{#FF7777}{\textbf{Decision\ Tree\ and\ Random\ Forest\ Regressors}}$**: For capturing non-linear relationships.
+- **$\textcolor{#FFAAAA}{\textbf{Decision\ Tree\ and\ Random\ Forest\ Regressors}}$**: For capturing non-linear relationships.
 - **$\textcolor{lightteal}{\textbf{Gradient\ Boosting\ Models\ (XGBoost,\ LightGBM)}}$**: For advanced, iterative improvements.
 - **$\textcolor{lightteal}{\textbf{Neural\ Networks\ (if\ applicable)}}$**: For modeling complex patterns.
 
