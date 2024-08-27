@@ -1,14 +1,18 @@
 # Technical Documentation
 
-![anim](https://images.ncsl.org/image/upload/c_fill,g_auto,w_1100/f_auto,q_auto/v1676057138/website/NU-solar-wind-turbine-clean-energy-498769592_1x.jpg)
-
-<p align="justify">
-This repository is dedicated to the development of AI-driven models for RenewAble Synergy, focusing on integrating AI in the renewable energy sector. The project aims to enhance the efficiency and management of renewable resources using machine learning techniques.
+<p align="center">
+  <img src="https://images.ncsl.org/image/upload/c_fill,g_auto,w_1100/f_auto,q_auto/v1676057138/website/NU-solar-wind-turbine-clean-energy-498769592_1x.jpg" alt="Renewable Energy">
 </p>
 
-# Renewable Energy Generation Forecast
+<p align="justify">
+This repository is dedicated to the development of AI-driven models for <strong>RenewAble Synergy</strong>, focusing on integrating AI in the renewable energy sector. The project aims to enhance the efficiency and management of renewable resources using machine learning techniques.
+</p>
 
-<h2 align="center">Solar Energy Generation Forecast</h2>
+## 📊 Renewable Energy Generation Forecast
+
+---
+
+<h2 align="center">🌞 Solar Energy Generation Forecast</h2>
 
 ### 1. Introduction
 We focus on forecasting solar energy generation using historical data. We preprocess the data and apply machine learning models to predict energy output.
@@ -26,7 +30,9 @@ We load time-series data from CSV files and perform:
 
 ### 3. Exploratory Data Analysis (EDA)
 We analyze trends, distributions, and relationships using:
-- Time-series plots, correlation matrices, histograms, and boxplots.
+- **Time-Series Plots:** For visualizing temporal trends.
+- **Correlation Matrices:** To explore feature relationships.
+- **Histograms and Boxplots:** For understanding data distribution.
 
 ### 4. Model Selection and Implementation
 We experiment with:
@@ -39,9 +45,9 @@ We tune hyperparameters using GridSearchCV or RandomizedSearchCV.
 
 ### 5. Evaluation Metrics
 We use:
-- **MAE:** To measure average prediction errors.
-- **RMSE:** To penalize larger errors.
-- **R²:** To explain variance captured by the model.
+- **Mean Absolute Error (MAE):** To measure average prediction errors.
+- **Root Mean Squared Error (RMSE):** To penalize larger errors.
+- **R² (R-Squared):** To explain variance captured by the model.
 
 ### 6. Model Training and Validation
 We apply cross-validation and plot learning/validation curves to monitor performance and diagnose overfitting.
@@ -49,7 +55,9 @@ We apply cross-validation and plot learning/validation curves to monitor perform
 ### 7. Forecasting and Results Visualization
 We predict solar energy generation using the best model and compare predictions against actual data using time-series plots and residual plots.
 
-<h2 align="center">Wind Energy Generation Forecast</h2>
+---
+
+<h2 align="center">💨 Wind Energy Generation Forecast</h2>
 
 ### 1. Introduction
 We focus on predicting wind energy generation using historical data. Our approach involves preprocessing the data and applying time-series forecasting models like ARIMA to predict wind energy output for the next 15 days.
@@ -85,6 +93,7 @@ We train the ARIMA model on historical data and validate its performance using t
 
 ### 7. Forecasting and Results Visualization
 The final model is used to predict wind energy generation for the next 15 days. We visualize the forecast against actual values, displaying prediction intervals and residual errors.
+
 
 # Maintenance Fault Detection
 
